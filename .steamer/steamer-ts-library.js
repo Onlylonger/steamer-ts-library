@@ -37,7 +37,7 @@ module.exports = {
     initGit(folderPath)
   },
   beforeInstallDep: function(answers, folderPath) {
-    rm('-rf', `${folderPath}/.steamer`)
+    // rm('-rf', `${folderPath}/.steamer`)
     updatePackageJson(`${folderPath}/package.json`, answers)
   }
 }
